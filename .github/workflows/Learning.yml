@@ -8,4 +8,4 @@ jobs:
 
   steps:
    -name:Echo Naga
-   run: Echo Hello World
+   run: echo Hello World
