@@ -1,0 +1,11 @@
+name: HelloWorld
+  on: workflow-dispatch
+
+  jobs:
+  build-job:
+    name: NagaBuild
+    runs-on: ubuntu-latest
+
+  steps:
+   -name:Echo Naga
+   run: Echo Hello World
