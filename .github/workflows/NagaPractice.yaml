@@ -1,0 +1,16 @@
+name: Task1 Practice
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on : ubuntu-latest
+    steps:
+      - name: Excercise steps
+        run: echo "the workflow name is ${{github.workflow}}"
+
+      - name: Current Date
+        run: echo "The current date is ${{github.date}}"
+
+      - name: OS Name
+        run: echo "The operating system of the runner is ${{runner.os}}"
