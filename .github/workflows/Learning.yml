@@ -1,6 +1,6 @@
 name: Naga 
 
-on: workflow_dispatch
+on: push main
 
 env:
     Day : Wednesday
@@ -13,10 +13,13 @@ jobs:
         run: echo "Naga workflow executed"
 
       - name: Today's day
-        run: echo "Today is ${{env.Day}}"
+        run: echo "Today is {{env.Day}}"
 
       - name: User Details
-        run: echo "The name of the User is ${{vars.USER}}"
+        run: echo "The name of the User is {{vars.USER}}"
 
       - name: User Age
-        run: echo "The age of ${{vars.USER}} is ${{vars.AGE}}"
+        run: echo "The age of {{vars.USER}} is {{vars.AGE}}"
+
+      - name: Branch Name
+       run: echo "The name of the branch is ${{github.ref}}} and the repository name is ${{github.repository}}"
