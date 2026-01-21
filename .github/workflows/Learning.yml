@@ -1,7 +1,7 @@
 name: HelloWorld
-  on: workflow-dispatch
+on: workflow-dispatch
 
-  jobs:
+jobs:
   build-job:
     name: NagaBuild
     runs-on: ubuntu-latest
