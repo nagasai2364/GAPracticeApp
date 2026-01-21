@@ -1,10 +1,10 @@
-  name: Naga Hello
+name: Naga Hello
 
-  on: workflow_dispatch
+on: workflow_dispatch
 
-  jobs:
-      build-job:
-      runs-on: ubuntu-latest
-      steps:
-        -name: Naga Hello World
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Naga Hello World
         run: echo "Hello Naga"
