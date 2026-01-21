@@ -5,7 +5,6 @@ jobs:
   build-job:
     name: NagaBuild
     runs-on: ubuntu-latest
-
-      steps:
-         -name:Echo Naga
-         run: echo Hello World
+    steps:
+    -name: Naga
+     run: echo Hello Naga 
