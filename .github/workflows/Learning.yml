@@ -13,10 +13,10 @@ jobs:
         run: echo "Naga workflow executed"
 
       - name: Today's day
-        run: echo "Today is {{env.Day}}"
+        run: echo "Today is ${{env.Day}}"
 
       - name: User Details
-        run: echo "The name of the User is {{vars.USER}}"
+        run: echo "The name of the User is ${{vars.USER}}"
 
       - name: User Age
-        run: echo "The age of {{vars.USER}} is {{vars.AGE}}"
+        run: echo "The age of ${{vars.USER}} is ${{vars.AGE}}"
