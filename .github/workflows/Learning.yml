@@ -9,17 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Naga steps
-        run: echo "Naga workflow executed"
+        - name: Naga steps
+          run: echo "Naga workflow executed"
 
-      - name: Today's day
-        run: echo "Today is ${{env.Day}}"
+        - name: Today's day
+          run: echo "Today is ${{env.Day}}"
 
-      - name: User Details
-        run: echo "The name of the User is ${{vars.USER}}"
+        - name: User Details
+          run: echo "The name of the User is ${{vars.USER}}"
 
-      - name: User Age
-        run: echo "The age of ${{vars.USER}} is ${{vars.AGE}}"
+        - name: User Age
+          run: echo "The age of ${{vars.USER}} is ${{vars.AGE}}"
 
-      - name: Branch Name
-       run: echo "The name of the branch is ${{github.ref}}} and the repository name is ${{github.repository}}"
+        - name: Branch Name
+          run: echo "The name of the branch is ${{github.ref}}} and the repository name is ${{github.repository}}"
