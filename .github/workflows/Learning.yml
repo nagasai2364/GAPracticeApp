@@ -23,3 +23,7 @@ jobs:
 
         - name: Branch Name
           run: echo "The name of the branch is ${{github.ref}}} and the repository name is ${{github.repository}}"
+
+        - name: staus of process
+          run: echo "The current status of the process is ${{job.status}}"
+        
