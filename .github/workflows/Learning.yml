@@ -1,6 +1,6 @@
 name: Naga 
 
-on: push
+on: workflow_dispatch
 
 env:
     Day : Wednesday
