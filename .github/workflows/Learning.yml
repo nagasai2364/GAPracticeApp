@@ -1,6 +1,6 @@
 name: Naga 
 
-on: push main
+on: push
 
 env:
     Day : Wednesday
