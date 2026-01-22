@@ -14,3 +14,6 @@ jobs:
 
       - name: OS Name
         run: echo "The operating system of the runner is ${{runner.os}}"
+
+      -name: Runner Temp Directory
+       run: echo "The temporary directory of the runner is ${{runner.temp}}"
